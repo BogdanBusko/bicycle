@@ -1,0 +1,2 @@
+class BicycleCategory < ApplicationRecord
+end
