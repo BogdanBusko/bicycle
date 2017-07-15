@@ -1,3 +1,3 @@
 class BicycleCategory < ApplicationRecord
-	has_many :bicycles, optional: true
+	has_many :bicycles
 end

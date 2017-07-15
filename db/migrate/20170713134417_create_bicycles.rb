@@ -3,6 +3,7 @@ class CreateBicycles < ActiveRecord::Migration[5.0]
     create_table :bicycles do |t|
       t.string :name
       t.string :description
+      t.string :image_url
 
       t.timestamps
     end

@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170713173454) do
   create_table "bicycles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "description"
+    t.string   "image_url"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
     t.integer  "bicycle_categories_id"

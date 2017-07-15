@@ -1,0 +1,40 @@
+.bicycles {
+	display: inline-block;
+	width: auto;
+	.inform-block {
+		margin-bottom: 10px;
+		.bicycle-used-category {
+			display: inline-block;
+		}
+		.search {
+			display: inline-block;
+			float: right;
+		}
+	}
+	.bicycle {
+		background-color: grey;
+		width: 700px;
+		height: 300px;
+		margin-bottom: 10px;
+		.bicycle-image {
+			display: inline-block;
+			float: left;
+			margin: 20px;
+			img {
+				height: 260px;
+				width: 300px;
+			}
+		}
+		.bicycle-inform {
+			margin-top: 20px;
+			display: inline-block;
+		}
+	}
+}
+
+.categories {
+	display: inline-block;
+	float: left;
+	width: 150px;
+}
+

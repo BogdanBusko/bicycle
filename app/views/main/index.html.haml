@@ -1,0 +1,13 @@
+.content
+	.bicycles
+		.inform-block
+			.bicycle-used-category
+				Category:
+				= @used_category
+			= render partial: 'partials/bicycles', collection: @bicycles
+	.categories
+		%ul
+			.categories
+				- @categories.each do |c|
+					%li
+						= link_to c.category, root_path(id: c.id)
