@@ -1,11 +1,11 @@
-class MainController < ApplicationController
-  def index
+class CategoriesController < ApplicationController
+  def show
   	@bicycles = show_bicycles
   	@categories = show_categories
   	@used_category = show_used_category
   end
 
-  private 
+  private
 
   	def show_bicycles
   		if params[:id]

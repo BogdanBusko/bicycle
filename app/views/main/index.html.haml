@@ -2,9 +2,11 @@
 	.bicycles
 		.inform-block
 			.bicycle-used-category
-				Category:
-				= @used_category
+				.category-inform
+					Category:
+					= @used_category
 			= render partial: 'partials/bicycles', collection: @bicycles
+			= will_paginate @bicycles
 	.categories
 		%ul
 			.categories
