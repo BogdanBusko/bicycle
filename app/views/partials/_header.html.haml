@@ -1,5 +1,8 @@
 %header
 	.title
 		Watch bicycle
+	.authentication
+		= link_to 'Log in |', new_user_session_path
+		= link_to ' Sign up', new_user_registration_path
 	.menu
 		= link_to 'Home', root_path
