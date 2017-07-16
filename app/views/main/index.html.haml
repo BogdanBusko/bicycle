@@ -4,7 +4,14 @@
 			.bicycle-used-category
 				Category:
 				= @used_category
+			.search 
+				= form_tag root_path, method: :get, id: 'bicycle_search' do
+					= hidden_field_tag :id, params[:id] if params[:id]
+					= text_field_tag :search, params[:search]
+					= submit_tag 'Serach', name: nil
+		#bicycles
 			= render partial: 'partials/bicycles', collection: @bicycles
+		= will_paginate @bicycles
 	.categories
 		%ul
 			.categories
